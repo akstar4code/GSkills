@@ -12,13 +12,13 @@ class Employee:
         return '{} {}'.format(self.first,self.last)
     def raise_amount(self):
         self.pay = int(self.pay *self.raise_amt)
+if '__main__' == __name__:
+    emp1 = Employee('Ashok','Kumar',50000)
+    emp2 = Employee('Prem','Kumar',60000)
+    print(emp1.fullname(),emp2.fullname())
 
-emp1 = Employee('Ashok','Kumar',50000)
-emp2 = Employee('Prem','Kumar',60000)
-print(emp1.fullname(),emp2.fullname())
-
-emp1.raise_amt = 1.05
-print(emp1.raise_amt)
-print(Employee.raise_amt)
-print(emp1.raise_amt)
-print('No of employee',Employee.no_of_emp)
+    emp1.raise_amt = 1.05
+    print(emp1.raise_amt)
+    print(Employee.raise_amt)
+    print(emp1.raise_amt)
+    print('No of employee',Employee.no_of_emp)
